@@ -1,0 +1,107 @@
+site_name: Unicesumar 
+
+theme:
+  name: material
+  custom_dir: assets
+  favicon: images/Unicesumar/favicon.ico
+  language: pt-BR
+  icon:
+    logo: fontawesome/solid/book-bookmark
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+    # - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  plugins:
+    - typeset
+    - search
+
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Alterar para o modo Claro
+        
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Alterar para o modo Noturno
+
+nav:
+  - Home: 
+    - 'Bem Vindo': 
+        - 'Bem Vindo': 'index.md'
+  - Análise e Desenvolvimento de Sistemas:
+    - 'Diciplinas/Módulos':
+        - 'Sistemas Operacionais': 
+            - 'Introdução a Sistemas Operacionais': 'Sistemas_Operacionais/unidade_1.md'
+            - 'Processos': 'Sistemas_Operacionais/unidade_2.md'
+            - 'Gerenciamento de Memória e Gerenciamento de Arquivos': 'Sistemas_Operacionais/unidade_3.md'
+            - 'Gerenciamento de Entrada/Saída e Proteção e Segurança': 'Sistemas_Operacionais/unidade_4.md'
+            - 'Sistemas Operacionais Multimídia e Máquina Virtual/Virtualização;E Comandos Linux': 'Sistemas_Operacionais/unidade_5.md'
+        - 'Estrutura de Dados I':
+            - 'Teste': 'Estrutura_de_Dado_I/unidade1.md'
+            - 'Teste': 'Estrutura_de_Dado_I/unidade2.md'
+        - 'Estrutura de Dados II':
+            - 'Teste': 'Estrutura_de_Dado_II/unidade1.md'
+            - 'Teste': 'Estrutura_de_Dado_II/unidade2.md'
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.emoji
+  - pymdownx.mark
+  - pymdownx.highlight
+  - attr_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - assets/.icons   
+  - toc:
+      permalink: true
+
+copyright: Copyright &copy; 2024 Herbert Barone
+
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/mermaid@8.5.1/dist/mermaid.css
+extra_javascript:
+  - https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js
+extra:
+  generator: False
+  homepage: http://127.0.0.1:8000/
+  social:
+    - icon: material/certificate
+      link: https://www.dio.me/
+      name: Digital Inovation One
+    - icon: fontawesome/solid/book-bookmark
+      link: https://studeo.unicesumar.edu.br/#!/access/login
+      name: Studeo
+    - icon: fontawesome/brands/github
+      link: https://github.com/Herbert-Barone
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/herbert-barone-0bb397204/
+      name: Likedin
+
